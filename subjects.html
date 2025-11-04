@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logoo.png" class="img-fluid" width="100" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="subjects.html" role="button">
+                            Subject
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Find by Subject <i
+                                        class="fas fa-chevron-right float-end"></i></a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="{{route('engineering')}}">Engineering</a></li>
+                                    <li><a class="dropdown-item" href="{{route('arts-science')}}">Arts & Science</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#medicine">Medicine & Healthcare</a></li>
+                                    <li><a class="dropdown-item" href="#humanities">Humanities & Social Science</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#authors">Authors & Editors</a></li>
+                            <li><a class="dropdown-item" href="#magazine">Magazine</a></li>
+                            <li><a class="dropdown-item" href="#open-access">Open Access</a></li>
+                            <li><a class="dropdown-item" href="#journalist">Journalist</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            Publication
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#publish-book">Publish your Book</a></li>
+                            <li><a class="dropdown-item" href="#publish-article">Publish your Article</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#librarians">Librarians</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Help & Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <div class="container-fluid p-5 all-head">
+        <div class="headd text-white lh-lg">
+            <h2 class="mb-4">Explore Our Subjects</h2>
+            <p>Nethrax Publications offers one of the most extensive collections of research and academic resources
+                across Science, Technology, Medicine, and the Humanities. Our digital library features a rich mix of
+                peer-reviewed journals, eBooks, and open access titles curated for scholars and professionals worldwide.
+            </p>
+            <p>Explore a wide range of disciplines and access expertly crafted content designed to inspire learning,
+                innovation, and discovery. Dive deeper into your field of interest with our growing repository of
+                trusted academic materials.</p>
+        </div>
+    </div>
+
+    <!-- browse by subjects -->
+    <section class="browse py-5">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6 mb-4">
+                    <div class="eng-section-wrapper">
+                        <h2 class="eng-heading">Engineering</h2>
+
+                        <div class="row g-3 mb-4 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="images/books/eng-book1.png"
+                                        alt="Arabian Journal for Science and Engineering Cover" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">Arabian Journal for Science and Engineering</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://media.springer.com/lw153/springer-static/cover/series/7818.jpg"
+                                        alt="Lecture Notes in Electrical Engineering Cover" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">Lecture Notes in Electrical Engineering</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://media.springer.com/lw153/springer-static/cover/series/15179.jpg"
+                                        alt="Lecture Notes in Electrical Engineering Cover" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">Lecture Notes in Electrical Engineering</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="eng-more-container">
+                            <a href="#" class="eng-more-link">
+                                Find more titles in Engineering
+                                <span class="eng-arrow-icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arts and Science -->
+                <div class="col-lg-6 mb-4">
+                    <div class="eng-section-wrapper">
+                        <h2 class="eng-heading">Arts & Science</h2>
+
+                        <div class="row g-3 mb-4 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://m.media-amazon.com/images/I/512kbB3norL._AC_UF1000,1000_QL80_.jpg"
+                                        alt="The Arts and Science of Life" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">The Arts and Science of Life</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://www.pagesofhackney.co.uk/wp-content/uploads/2020/04/FRONTCOVER-54.jpg"
+                                        alt="Science Fiction" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">Science Fiction</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://press.uchicago.edu/dam/ucp/books/jacket/978/17/89/14/9781789140545.jpg"
+                                        alt="COSMOS" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">COSMOS</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="eng-more-container">
+                            <a href="#" class="eng-more-link">
+                                Find more titles in Arts & Science
+                                <span class="eng-arrow-icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Medicine & HealthCare -->
+                <div class="col-lg-6 mb-4">
+                    <div class="eng-section-wrapper">
+                        <h2 class="eng-heading">Medicine & HealthCare</h2>
+
+                        <div class="row g-3 mb-4 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://media.springer.com/lw153/springer-static/cover/journal/432.jpg"
+                                        alt="Journal of Cancer Research and Clinical Oncology" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">Journal of Cancer Research and Clinical
+                                        Oncology</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://media.springernature.com/full/springer-static/cover-hires/book/978-981-19-3440-7"
+                                        alt="Innovation in Medicine and HealthCare" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">Innovation in Medicine and HealthCare</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGeeCIiwB3UAkSCLbEV_K8MsZ23UvtDlclfQ&s"
+                                        alt="Personalized medicine in the Making" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">Personalized medicine in the Making</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="eng-more-container">
+                            <a href="#" class="eng-more-link">
+                                Find more titles in Medicine & HealthCare
+                                <span class="eng-arrow-icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Humanities & Social Science -->
+                <div class="col-lg-6 mb-4">
+                    <div class="eng-section-wrapper">
+                        <h2 class="eng-heading">Humanities & Social Science</h2>
+
+                        <div class="row g-3 mb-4 justify-content-center">
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://rosenpublishing.com/sites/rosenpublishing.com/files/covers/9781499464047.jpg"
+                                        alt="The History of Psychology" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">The History of Psychology</a>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://www.ucl.ac.uk/digital-humanities/sites/digital_humanities/files/styles/medium_image/public/computation-humanities.jpg?itok=4RGxILm7"
+                                        alt="Computation and Humanities" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">Computation and Humanities</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="eng-pub-card">
+                                    <img src="https://m.media-amazon.com/images/I/61pLFG8IXEL._UF1000,1000_QL80_.jpg"
+                                        alt="Futuring the Future" class="eng-book-cover">
+                                    <a href="#" class="eng-book-link">Futuring the Future</a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="eng-more-container">
+                            <a href="#" class="eng-more-link">
+                                Find more titles in Humanities & Social Science
+                                <span class="eng-arrow-icon">→</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container py-5">
+            <h3 class="display-6 mb-4">Browse By Subjects</h3>
+            <div class="row">
+                <a href="" class="h5 fw-bold mb-4">Agriculture <i class="arrow"></i></a>
+                <div class="col-md-3">
+                    <p class="custom-link">
+                        Agriculture
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="custom-link">
+                        Aquaculture
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <a href="" class="h5 fw-bold mb-4">Arts and architecture <i class="arrow"></i></a>
+                <div class="col-md-3">
+                    <p class="custom-link">
+                        Architecture
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="custom-link">
+                        Art & Applied Arts
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="custom-link">
+                        Graphic Design
+                    </a>
+                </div>
+            </div>
+            <!-- B -->
+            <div class="row">
+                <a href="" class="h5 fw-bold my-4">Business and management</a>
+                <div class="col-md-3">
+                    <p class="custom-link">
+                        Accounting
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">
+                        Advertising
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Business & Management</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Business & Society</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">
+                        Business Ethics
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">
+                        Business Self-Help 
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Business Statistics & Math</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Business Technology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Career Development</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Consulting</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Topics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Finance & Investments</p>
+                </div>
+
+
+
+            </div>
+
+            <!-- c -->
+            <div class="row">
+                <a href="" class="h5 fw-bold my-4">Chemistry</a>
+               <div class="col-md-3">
+                    <p class="custom-link">Allied Health Chemistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Analytical Chemistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Chemical & Environmental Safety</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Inorganic Chemistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Biochemistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">History Of Chemistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Mathematics For Chemistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Physical Chemistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Preparatory Chemistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Topics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Sustainable Chemistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Batteries & Fuel Cells</p>
+                </div>
+
+
+            </div>
+
+            <div class="row">
+                <a href="" class="h5 fw-bold my-4">Computing</a>
+               <div class="col-md-3">
+                    <p class="custom-link">Computer Graphics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Office Productivity</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Computer Science</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Hardware</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Internet & WWW</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Operating Systems</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Software Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Topics</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <a href="" class="h5 fw-bold my-4">Culinary and hospitality</a>
+               <div class="col-md-3">
+                    <p class="custom-link">Accounting</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Baking & Pastry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Beverages</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Catering & Events Management</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Cooking</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Food & Drink</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Food Service Operations</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Food Writing & Reference</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General Culinary & Hospitality</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Hotel Management</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Marketing</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Professional Cooking</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Topics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Travel & Tourism Industry</p>
+                </div>
+
+            </div>
+
+            <!-- e -->
+            <div class="row">
+                <a href="" class="h5 fw-bold my-4">Earth and space sciences</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Earth Science</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Environmental Changes</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Environmental Economics & Politics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Environmental Ethics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Environmental Management</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Environmental Science</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Environmental Studies</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Geography</p>
+                </div>
+
+            </div>
+            <!-- Education -->
+             <div class="row">
+                <a href="" class="h5 fw-bold my-4">Education</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Assessment, Evaluation Methods</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Classroom Management</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Conflict Resolution & Mediation</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Curriculum Tools</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General Education</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Information & Library Science</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">K-12</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Education</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Vocational Technology</p>
+                </div>
+            </div>
+            <!-- Engineering and Material Science -->
+             <div class="row">
+                <a href="" class="h5 fw-bold my-4">Engineering and materials science</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Biomedical Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Chemical & Biochemical Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Civil Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Electrical & Electronics Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Energy</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Environmental Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Industrial Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Materials Science</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Mechanical Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General Engineering</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Nanotechnology</p>
+                </div>
+            </div>
+            
+            <!-- H - Humanities -->
+              <div class="row">
+                <a href="" class="h5 fw-bold my-4">Humanities</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Classical Studies</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">History</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Linguistics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Literature</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Philosophy</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Religion & Theology</p>
+                </div>
+            </div>
+
+            <!-- L - Law and criminology -->
+              <div class="row">
+                <a href="" class="h5 fw-bold my-4">Law and criminology</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Civil Law</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Criminal Law</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Criminology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General & Introductory Law</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Intellectual Property Law</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">International Law</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Penology & Police Science</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Procedural Law</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Public Law</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Topics</p>
+                </div>
+            </div>
+
+            <!-- Life Sciences -->
+             <div class="row">
+                <a href="" class="h5 fw-bold my-4">Life sciences</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Anatomy & Physiology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Animal Science & Zoology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Cell & Molecular Biology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Comparative Biology (Botany & Zoology)</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Developmental Biology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Ecology & Organismal Biology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Entomology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Evolution</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Forensic Science</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General Life Sciences</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General Biology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Genetics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Human Biology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Microbiology & Virology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Microscopy</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Neuroscience</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Ornithology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Parasitology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Plant Science</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Topics</p>
+                </div>
+
+            </div>
+
+            <!-- Lifestyle -->
+             <div class="row">
+                <a href="" class="h5 fw-bold my-4">Lifestyle</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Digital Cameras & Photography</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Gardening</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General Lifestyle</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Humor</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Pet Care</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Popular Culture</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Topics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Sports</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Technical & How-To</p>
+                </div>
+
+            </div>
+
+            <!-- M - Mathematics & Statistics -->
+             <div class="row">
+                <a href="" class="h5 fw-bold my-4">Mathematics and statistics</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Algebra</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Applied Mathematics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Applied Probability & Statistics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Biostatistics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Calculus</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Chaos, Fractals, Dynamic Systems</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Combinatorics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Computational & Graphical Statistics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Cryptography</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Data Mining Statistics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Discrete Mathematics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Finite Mathematics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General Mathematics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General Statistics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Geometry & Topology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Graph Theory</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Logic & Foundations</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Mathematical Analysis</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Mathematical Modeling</p>
+                </div>
+
+            </div>
+
+             <!-- M - Medicine, nursing, and dentistry -->
+             <div class="row">
+                <a href="" class="h5 fw-bold my-4">Medicine, nursing, and dentistry</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Addiction</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Allergy & Clinical Immunology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Andrology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Anesthesia & Pain Management</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Audiology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Basic Medical Sciences</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Cardiovascular Disease</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Computational & Graphical Statistics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Cellular & Molecular Medicine</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Consumer Health</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Dentistry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Dermatology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Emergency Medicine & Trauma</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Endocrinology & Diabetes</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Gastroenterology & Hepatology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General & Internal Medicine</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General Medical Sciences</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Geriatric Medicine</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Health & Social Care</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Hematology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Infectious Disease & Microbiology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Intellectual Disability</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Mental Health</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Neonatology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Nephrology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Neurology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Nursing & Midwifery</p>
+                </div>
+
+                <div class="col-md-3">
+                    <p class="custom-link">Nutrition & Dietetics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Obstetrics & Gynecology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Occupational Therapy</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Oncology & Radiotherapy</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Ophthalmology & Optometry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Otolaryngology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Pathology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Pediatrics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Pharmacology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Physiotherapy</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Podiatry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Psychiatry</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Public Health</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Radiography</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Radiology & Imaging</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Renal Transplantation</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Respiratory Medicine</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Rheumatology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Sexual Medicine</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Topics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Speech Therapy</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Sports Medicine</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Surgery & Surgical Specialties</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Transplantation</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Urology</p>
+                </div>
+
+            </div>
+
+            <!-- P - Physics and astronomy -->
+             <div class="row">
+                <a href="" class="h5 fw-bold my-4">Physics and astronomy</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Astronomy & Astrophysics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Atomic & Molecular Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Biophysics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Classical & Fluid Mechanics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Condensed Matter</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Cosmology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Electricity</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Environmental Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General & Introductory Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">History of Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Introductory Physics (Algebra)</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Introductory Physics (Calculus)</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Laser</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Magnetism</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Mathematical Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Medical & Health Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Nonlinear & Complex Systems</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Nuclear & High Energy Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Optics & Photonics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Particle Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Physics Special Topics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Physics of Acoustics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Plasma Physics</p>
+                </div><div class="col-md-3">
+                    <p class="custom-link">Polymer Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Popular Interest Physics</p>
+                </div><div class="col-md-3">
+                    <p class="custom-link">Quantum Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Semiconductor Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Solid State Physics</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Theoretical Physics</p>
+                </div><div class="col-md-3">
+                    <p class="custom-link">Thermal Physics</p>
+                </div>
+
+
+            </div>
+
+            <!-- R- Reference -->
+             <div class="row">
+                <a href="" class="h5 fw-bold mb-4">Reference <i class="arrow"></i></a>
+                <div class="col-md-12">
+                    <p class="custom-link">
+                        General Reference
+                    </p>
+                </div>
+            </div>
+
+            <!-- Social and behavioral sciences -->
+             <div class="row">
+                <a href="" class="h5 fw-bold my-4">Social and behavioral sciences</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">Anthropology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Archaeology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Communication & Media Studies</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Cultural Communication</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Cultural Studies</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Development Studies</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Family & Child Studies</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Political Science</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Psychology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Social Policy & Welfare</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Sociology</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Urban Studies</p>
+                </div>
+
+            </div>
+            <!-- Veterinary medicine -->
+            <div class="row">
+                <a href="" class="h5 fw-bold mb-4">Veterinary medicine <i class="arrow"></i></a>
+                <div class="col-md-3">
+                    <p class="custom-link">
+                        Equine Science
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <a href="#" class="custom-link">
+                        Veterinary Medicine
+                    </a>
+                </div>
+            </div>
+
+            <!-- World languages -->
+             <div class="row">
+                <a href="" class="h5 fw-bold my-4">World languages</a>
+                 <div class="col-md-3">
+                    <p class="custom-link">English as a Second Language</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">French</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">General World Languages</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">German</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Italian</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Japanese</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Other Languages</p>
+                </div>
+                <div class="col-md-3">Russian</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Spanish</p>
+                </div>
+                <div class="col-md-3">
+                    <p class="custom-link">Special Topics</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>About Nethrax</h5>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News & Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">For Authors</a></li>
+                        <li><a href="#">For Librarians</a></li>
+                        <li><a href="#">For Societies</a></li>
+                        <li><a href="#">Open Access</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Help & Support</h5>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Permissions</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons mb-3">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-dark btn-search">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Nethrax Publisher. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navbar = document.querySelector('.navbar.fixed-top');
+        document.body.style.paddingTop = navbar.offsetHeight + 'px';
+    </script>
+</body>
+
+</html>

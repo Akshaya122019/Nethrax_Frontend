@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logoo.png" class="img-fluid" width="100" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="subjects.html" role="button">
+                            Subject
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Find by Subject <i
+                                        class="fas fa-chevron-right float-end"></i></a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="{{route('engineering')}}">Engineering</a></li>
+                                    <li><a class="dropdown-item" href="{{route('arts-science')}}">Arts & Science</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="#medicine">Medicine & Healthcare</a></li>
+                                    <li><a class="dropdown-item" href="#humanities">Humanities & Social Science</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#authors">Authors & Editors</a></li>
+                            <li><a class="dropdown-item" href="#magazine">Magazine</a></li>
+                            <li><a class="dropdown-item" href="#open-access">Open Access</a></li>
+                            <li><a class="dropdown-item" href="#journalist">Journalist</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            Publication
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#publish-book">Publish your Book</a></li>
+                            <li><a class="dropdown-item" href="#publish-article">Publish your Article</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#librarians">Librarians</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Help & Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <header class="about-header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb-custom">
+                    <a href="{{route('home')}}">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <i class="fas fa-chevron-right"></i>
+                    <span>About Us</span>
+                </div>
+
+                <!-- Main Title -->
+                <h1 class="main-title">Empowering Ideas, Shaping the Future</h1>
+
+                <!-- Decorative Line -->
+                <div class="decorative-line"></div>
+
+                <!-- Subtitle -->
+                <p class="main-subtitle">
+                    At Nethrax Publishers, we transform knowledge into impact — connecting minds, inspiring innovation,
+                    and shaping a smarter world.
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <!-- About -->
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="abt-img">
+                    <img src="images/logoo.png" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="abt-con lh-lg">
+                    <p>Nethrax Publications is a global publishing house committed to transforming ideas into impact. We
+                        specialize in academic, scientific, and literary publishing, creating a bridge between creators,
+                        educators, and readers across the world.</p>
+                    <p>Founded with a vision to empower voices and preserve knowledge, Nethrax has grown into a
+                        multidisciplinary platform serving authors, researchers, and institutions alike.</p>
+                    <p>From textbooks and journals to international research publications, our mission is simple: To
+                        make high-quality content accessible to everyone, everywhere.</p>
+                    <p>We combine traditional publishing excellence with modern digital innovation, ensuring every
+                        publication under the Nethrax name meets global standards of quality, ethics, and design.</p>
+                </div>
+            </div>
+        </div>
+        <div class="abt-outer lh-lg">
+            <p>At Nethrax, we believe that every author's work deserves recognition not just as a document, but as a
+                legacy.Our editorial teams, reviewers, and designers work hand-in-hand to elevate your ideas from draft
+                to global discovery.</p>
+        </div>
+    </div>
+
+    <!-- Moto and Strength -->
+    <section class="moto-section py-5">
+        <div class="container text-center">
+            <!-- Motto -->
+            <div class="mb-5">
+                <h3 class="fw-bold display-6 text-primary-emphasis motto-title">
+                    Publishing Knowledge Without Borders
+                </h3>
+                <p class="text-muted mx-auto" style="max-width: 700px;">
+                    Our mission is to make learning and knowledge accessible to everyone through integrity,
+                    innovation, and meaningful impact in everything we publish.
+                </p>
+            </div>
+
+            <!-- Strength Cards -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 moto-card">
+                        <div class="card-body">
+                            <i class="bi bi-shield-check fs-1 mb-3 text-success"></i>
+                            <h4 class="fw-semibold">Integrity</h4>
+                            <p class="text-muted small">
+                                Upholding honesty and ethics in every step of our publishing journey.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 moto-card">
+                        <div class="card-body">
+                            <i class="bi bi-lightbulb fs-1 mb-3 text-success"></i>
+                            <h4 class="fw-semibold">Innovation</h4>
+                            <p class="text-muted small">
+                                Continuously embracing creativity and technology to share ideas globally.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100 moto-card">
+                        <div class="card-body">
+                            <i class="bi bi-globe2 fs-1 mb-3 text-success"></i>
+                            <h4 class="fw-semibold">Impact</h4>
+                            <p class="text-muted small">
+                                Transforming knowledge into positive change that inspires generations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>About Nethrax</h5>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News & Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">For Authors</a></li>
+                        <li><a href="#">For Librarians</a></li>
+                        <li><a href="#">For Societies</a></li>
+                        <li><a href="#">Open Access</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Help & Support</h5>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Permissions</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons mb-3">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-dark btn-search">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Nethrax Publisher. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const navbar = document.querySelector('.navbar.fixed-top');
+        document.body.style.paddingTop = navbar.offsetHeight + 'px';
+    </script>
+</body>
+
+</html>
