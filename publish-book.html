@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logoo.png" class="img-fluid" width="100" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle" role="button">
+                            Subject
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li class="dropdown-submenu">
+                                <a class="dropdown-item dropdown-toggle" href="#">Find by Subject <i
+                                        class="fas fa-chevron-right float-end"></i></a>
+                                <ul class="dropdown-menu submenu">
+                                    <li><a class="dropdown-item" href="engineering.html">Engineering</a></li>
+                                    <li><a class="dropdown-item" href="arts-science.html">Arts & Science</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="medicine-healthcare.html">Medicine &
+                                            Healthcare</a></li>
+                                    <li><a class="dropdown-item" href="humanities.html">Humanities & Social Science</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="subjects.html">View All Subjects</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            Service
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="authors-editors.html">Authors & Editors</a></li>
+                            <li><a class="dropdown-item" href="#magazine">Magazine</a></li>
+                            <li><a class="dropdown-item" href="#open-access">Open Access</a></li>
+                            <li><a class="dropdown-item" href="#journalist">Journalist</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button">
+                            Publication
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="publish-book.html">Publish your Book</a></li>
+                            <li><a class="dropdown-item" href="publish-article.html">Publish your Article</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="librarians.html">Librarians</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Help & Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="custom-banner">
+        <div class="container custom-banner-content">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb custom-breadcrumb">
+                    <li class="breadcrumb-item custom-breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item custom-breadcrumb-item"><a href="#">Publish</a></li>
+                    <li class="breadcrumb-item custom-breadcrumb-item active" aria-current="page">Book</li>
+                </ol>
+            </nav>
+            <h1 class="custom-banner-title">Publish my Book</h1>
+        </div>
+    </section>
+    <!-- sub header -->
+    <div class="container-fluid sub-nav bg-light">
+        <div class="container">
+            <div class="sub text-center py-3 d-flex flex-wrap justify-content-center gap-4">
+                <a href="#publish-your-book" class="sub-link">Book Publishing</a>
+                <a href="#resources-support" class="sub-link">Resources</a>
+                <a href="#trade-publishing" class="sub-link">Trade Publishing</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- About -->
+    <div class="container py-5">
+        <div class="publish-book-abt">
+            <h2 class="display-6 mb-4">Make Your Publishing Journey Inspiring and Effortless</h2>
+            <p class="lh-lg">Publishing your book with Nethrax Publishers means transforming your ideas into impactful
+                knowledge with a trusted partner by your side. From concept to global reach, we offer personalized
+                guidance at every stage of the publishing process. Our experienced editorial team helps refine your
+                manuscript, enhances your visibility through strategic promotion, and connects your work with readers,
+                educators, and professionals worldwide. Whether you’re a first-time author or a seasoned researcher, we
+                are committed to realizing your vision and making your publishing journey smooth, rewarding, and
+                successful—empowering you to share your ideas with the world.</p>
+        </div>
+    </div>
+
+    <!-- Publish book -->
+    <section class="publish-your-book" id="publish-your-book">
+        <div class="container">
+            <h2 class="display-6 mb-4">Publish Your Book</h2>
+            <p>From shaping your manuscript to showcasing your published work, Nethrax Publishers is your dedicated
+                partner every step of the way. Our streamlined publishing process is designed to make your journey
+                smooth, transparent, and rewarding—from proposal submission to global promotion. With a team of
+                experienced editors and publishing professionals, we ensure your work reaches the right audience and
+                makes a lasting impact in the academic and professional community.</p>
+
+            <div class="steps-to-publish">
+                <p class="fs-3">Steps to Publish your Book</p>
+                <div class="container slider-wrapper py-5">
+                    <div class="d-flex justify-content-end gap-2 mb-3">
+                        <button
+                            class="control-button btn btn-light rounded-circle d-flex align-items-center justify-content-center"
+                            id="prevBtn">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button
+                            class="control-button btn btn-light rounded-circle d-flex align-items-center justify-content-center active"
+                            id="nextBtn">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="slider-viewport">
+                        <div class="slide-container" id="slideTrack">
+                            <div class="slide-item px-2">
+                                <div class="info-card card border p-4">
+                                    <div class="icon-arrow fs-4 mb-3">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <h3 class="fs-5 fw-normal mb-5">Prepare proposal</h3>
+                                    <button class="action-btn btn btn-outline-primary text-uppercase fw-semibold">
+                                        PREPARE PROPOSAL <i class="fas fa-chevron-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="slide-item px-2">
+                                <div class="info-card card border p-4">
+                                    <div class="icon-arrow fs-4 mb-3">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <h3 class="fs-5 fw-normal mb-5">Submit proposal</h3>
+                                    <button class="action-btn btn btn-outline-primary text-uppercase fw-semibold">
+                                        SUBMIT PROPOSAL <i class="fas fa-chevron-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="slide-item px-2">
+                                <div class="info-card card border p-4">
+                                    <div class="icon-arrow fs-4 mb-3">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <h3 class="fs-5 fw-normal mb-5">Prepare manuscript</h3>
+                                    <button class="action-btn btn btn-outline-primary text-uppercase fw-semibold">
+                                        PREPARE MANUSCRIPT <i class="fas fa-chevron-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="slide-item px-2">
+                                <div class="info-card card border p-4">
+                                    <div class="icon-arrow fs-4 mb-3">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <h3 class="fs-5 fw-normal mb-5">Submit manuscript</h3>
+                                    <button class="action-btn btn btn-outline-primary text-uppercase fw-semibold">
+                                        SUBMIT MANUSCRIPT <i class="fas fa-chevron-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="slide-item px-2">
+                                <div class="info-card card border p-4">
+                                    <div class="icon-arrow fs-4 mb-3">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <h3 class="fs-5 fw-normal mb-5">Review process</h3>
+                                    <button class="action-btn btn btn-outline-primary text-uppercase fw-semibold">
+                                        VIEW PROCESS <i class="fas fa-chevron-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="slide-item px-2">
+                                <div class="info-card card border p-4">
+                                    <div class="icon-arrow fs-4 mb-3">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                    <h3 class="fs-5 fw-normal mb-5">Track manuscript</h3>
+                                    <button class="action-btn btn btn-outline-primary text-uppercase fw-semibold">
+                                        TRACK MANUSCRIPT <i class="fas fa-chevron-right ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section class="resources-support" id="resources-support">
+        <div class="container">
+            <h2 class="display-6 mb-4">Resources to Support Your Publishing Journey</h2>
+            <p class="lh-lg">Discover a range of tools and guides designed to help you at every stage of the publishing
+                process. From manuscript preparation and formatting guidelines to copyright awareness and ethical
+                publishing practices, Nethrax Publishers provides the resources you need to publish with confidence.
+                Whether you’re refining your research, finalizing your book layout, or preparing for global
+                distribution, our resources are here to ensure a smooth and successful publishing experience.</p>
+            <a href="" class="btn btn-primary p-3 mb-5">Discover Essential Resources</a>
+        </div>
+    </section>
+
+    <!-- Trade Publishing -->
+    <section class="trade-publishing" id="trade-publishing">
+        <div class="container">
+            <h2 class="display-6 mb-4">Trade publishing</h2>
+            <p class="lh-lg">Are you ready to share your ideas, expertise, or stories with a general audience? Our Trade
+                publishing team specializes in creating and distributing world-class books designed to expand knowledge
+                and skills, excel in careers, and enhance personal and professional lives for readers everywhere. You're
+                in the right place if your trade book idea aligns with topics that drive personal and professional
+                growth.</p>
+            <a href="" class="btn btn-primary p-3 mb-5">Learn about trade publishing</a>
+        </div>
+    </section>
+
+    <div class="quotation">
+        <div class="container">
+            <div class="text-center">
+                <p class="fs-3 fst-italic" style="color:#1a1a5e;">" From classrooms to conferences, from manuscripts to markets
+                    Nethrax publishes the world’s next big idea "
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>About Nethrax</h5>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Leadership</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">News & Events</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Resources</h5>
+                    <ul>
+                        <li><a href="#">For Authors</a></li>
+                        <li><a href="#">For Librarians</a></li>
+                        <li><a href="#">For Societies</a></li>
+                        <li><a href="#">Open Access</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Help & Support</h5>
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Permissions</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect With Us</h5>
+                    <div class="social-icons mb-3">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email">
+                        <button class="btn btn-dark btn-search">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Nethrax Publisher. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Nav -->
+    <script>
+        const navbar = document.querySelector('.navbar.fixed-top');
+        document.body.style.paddingTop = navbar.offsetHeight + 'px';
+    </script>
+    <script>
+        $(document).ready(function () {
+            let currentIndex = 0;
+            const $track = $('#slideTrack');
+            const $items = $('.slide-item');
+            const totalItems = $items.length;
+            let itemsPerView = 4;
+
+            function updateItemsPerView() {
+                const width = $(window).width();
+                if (width <= 576) {
+                    itemsPerView = 1;
+                } else if (width <= 768) {
+                    itemsPerView = 2;
+                } else if (width <= 992) {
+                    itemsPerView = 3;
+                } else {
+                    itemsPerView = 4;
+                }
+            }
+
+            function updateSlider() {
+                const translateX = -(currentIndex * (100 / itemsPerView));
+                $track.css('transform', `translateX(${translateX}%)`);
+                updateButtons();
+            }
+
+            function updateButtons() {
+                const maxIndex = totalItems - itemsPerView;
+                $('#prevBtn').prop('disabled', currentIndex === 0);
+                $('#nextBtn').prop('disabled', currentIndex >= maxIndex);
+
+                if (currentIndex >= maxIndex) {
+                    $('#nextBtn').removeClass('active');
+                } else {
+                    $('#nextBtn').addClass('active');
+                }
+            }
+
+            $('#nextBtn').click(function () {
+                const maxIndex = totalItems - itemsPerView;
+                if (currentIndex < maxIndex) {
+                    currentIndex++;
+                    updateSlider();
+                }
+            });
+
+            $('#prevBtn').click(function () {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateSlider();
+                }
+            });
+
+            $(window).resize(function () {
+                updateItemsPerView();
+                currentIndex = Math.min(currentIndex, totalItems - itemsPerView);
+                updateSlider();
+            });
+
+            updateItemsPerView();
+            updateSlider();
+        });
+    </script>
+</body>
+
+</html>

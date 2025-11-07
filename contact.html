@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -77,124 +78,94 @@
         </div>
     </nav>
 
-    <!-- Hero Banner -->
-    <header class="about-header">
-        <div class="container">
-            <div class="header-content">
-                <!-- Breadcrumb -->
-                <div class="breadcrumb-custom">
-                    <a href="{{route('home')}}">
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a>
-                    <i class="fas fa-chevron-right"></i>
-                    <span>About Us</span>
-                </div>
-
-                <!-- Main Title -->
-                <h1 class="main-title">Empowering Ideas, Shaping the Future</h1>
-
-                <!-- Decorative Line -->
-                <div class="decorative-line"></div>
-
-                <!-- Subtitle -->
-                <p class="main-subtitle">
-                    At Nethrax Publishers, we transform knowledge into impact — connecting minds, inspiring innovation,
-                    and shaping a smarter world.
-                </p>
-            </div>
-        </div>
-    </header>
-
-    <!-- About -->
-    <div class="container py-5">
-        <div class="row">
-            <div class="col-md-6">
-                <div class="abt-img">
-                    <img src="images/logoo.png" class="img-fluid">
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="abt-con lh-lg">
-                    <p>Nethrax Publications is a global publishing house committed to transforming ideas into impact. We
-                        specialize in academic, scientific, and literary publishing, creating a bridge between creators,
-                        educators, and readers across the world.</p>
-                    <p>Founded with a vision to empower voices and preserve knowledge, Nethrax has grown into a
-                        multidisciplinary platform serving authors, researchers, and institutions alike.</p>
-                    <p>From textbooks and journals to international research publications, our mission is simple: To
-                        make high-quality content accessible to everyone, everywhere.</p>
-                    <p>We combine traditional publishing excellence with modern digital innovation, ensuring every
-                        publication under the Nethrax name meets global standards of quality, ethics, and design.</p>
-                </div>
-            </div>
-        </div>
-        <div class="abt-outer lh-lg">
-            <p>At Nethrax, we believe that every author's work deserves recognition not just as a document, but as a
-                legacy.Our editorial teams, reviewers, and designers work hand-in-hand to elevate your ideas from draft
-                to global discovery.</p>
-        </div>
+    <!-- Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>We’re Here to Help</h1>
+      <p class="lead">Have a question about publishing, submissions, or our services? We’d love to hear from you.</p>
     </div>
+  </section>
 
-    <!-- Moto and Strength -->
-    <section class="moto-section py-5">
-        <div class="container text-center">
-            <!-- Motto -->
-            <div class="mb-5">
-                <h3 class="fw-bold display-6 text-primary-emphasis motto-title">
-                    Publishing Knowledge Without Borders
-                </h3>
-                <p class="text-muted mx-auto" style="max-width: 700px;">
-                    Our mission is to make learning and knowledge accessible to everyone through integrity,
-                    innovation, and meaningful impact in everything we publish.
-                </p>
-            </div>
-
-            <!-- Strength Cards -->
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm h-100 moto-card">
-                        <div class="card-body">
-                            <i class="bi bi-shield-check fs-1 mb-3 text-success"></i>
-                            <h4 class="fw-semibold">Integrity</h4>
-                            <p class="text-muted small">
-                                Upholding honesty and ethics in every step of our publishing journey.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm h-100 moto-card">
-                        <div class="card-body">
-                            <i class="bi bi-lightbulb fs-1 mb-3 text-success"></i>
-                            <h4 class="fw-semibold">Innovation</h4>
-                            <p class="text-muted small">
-                                Continuously embracing creativity and technology to share ideas globally.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4">
-                    <div class="card border-0 shadow-sm h-100 moto-card">
-                        <div class="card-body">
-                            <i class="bi bi-globe2 fs-1 mb-3 text-success"></i>
-                            <h4 class="fw-semibold">Impact</h4>
-                            <p class="text-muted small">
-                                Transforming knowledge into positive change that inspires generations.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+  <!-- Contact Info -->
+  <section class="contact-info py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <i class="fa-solid fa-phone"></i>
+          <h5 class="fw-semibold mt-3">Phone</h5>
+          <p class="text-muted">+91 XXXXX XXXXX</p>
         </div>
-         <div class="container pt-4">
-                <p class="lead">Nethrax Publications, where creativity meets credibility, and where every story, study, and sentence finds its voice on the world stage.</p>
-            </div>
-    </section>
+        <div class="col-md-4">
+          <i class="fa-solid fa-envelope"></i>
+          <h5 class="fw-semibold mt-3">Email</h5>
+          <p class="text-muted">abc@gmail.com</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa-solid fa-location-dot"></i>
+          <h5 class="fw-semibold mt-3">Address</h5>
+          <p class="text-muted">XXXX</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Help Topics -->
+  <section class="help-section py-5 bg-light">
+    <div class="container">
+      <h3 class="text-center mb-5 fw-bold" style="color:#1a1a5e;">How Can We Help You?</h3>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card p-4 text-center h-100">
+            <i class="fa-solid fa-book-open"></i>
+            <h5 class="fw-semibold mb-3">Publishing Support</h5>
+            <p class="text-muted">
+              Learn about submitting your manuscript, journal selection, and author guidelines.
+            </p>
+            <a href="#" class="btn btn-success mt-auto">Get Support →</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-4 text-center h-100">
+            <i class="fa-solid fa-user-gear"></i>
+            <h5 class="fw-semibold mb-3">Customer Care</h5>
+            <p class="text-muted">
+              For account, access, or subscription-related queries, our team is ready to help.
+            </p>
+            <a href="#" class="btn btn-success mt-auto">Contact Us →</a>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card p-4 text-center h-100">
+            <i class="fa-solid fa-circle-info"></i>
+            <h5 class="fw-semibold mb-3">General Inquiries</h5>
+            <p class="text-muted">
+              For partnerships, events, or general questions, reach out to our support staff.
+            </p>
+            <a href="#" class="btn btn-success mt-auto">Learn More →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map -->
+  <section class="map-container py-5">
+    <div class="container">
+      <h3 class="text-center mb-4 fw-bold" style="color:#1a1a5e;">Our Location</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-10">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3916.491241351263!2d80.22595541480295!3d13.0826808907764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5265e1e6c70513%3A0xdeb99b34b9b6a0bb!2sChennai%2C%20Tamil%20Nadu%2C%20India!5e0!3m2!1sen!2sin!4v1698746512345!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+   
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -253,6 +224,7 @@
         const navbar = document.querySelector('.navbar.fixed-top');
         document.body.style.paddingTop = navbar.offsetHeight + 'px';
     </script>
+
 </body>
 
 </html>

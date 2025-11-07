@@ -23,19 +23,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="subjects.html" role="button">
+                        <button class="nav-link dropdown-toggle" role="button">
                             Subject
-                        </a>
+                        </button>
                         <ul class="dropdown-menu">
                             <li class="dropdown-submenu">
                                 <a class="dropdown-item dropdown-toggle" href="#">Find by Subject <i
                                         class="fas fa-chevron-right float-end"></i></a>
                                 <ul class="dropdown-menu submenu">
                                     <li><a class="dropdown-item" href="engineering.html">Engineering</a></li>
-                                    <li><a class="dropdown-item" href="{{route('arts-science')}}">Arts & Science</a>
+                                    <li><a class="dropdown-item" href="arts-science.html">Arts & Science</a>
                                     </li>
-                                    <li><a class="dropdown-item" href="#medicine">Medicine & Healthcare</a></li>
-                                    <li><a class="dropdown-item" href="#humanities">Humanities & Social Science</a></li>
+                                    <li><a class="dropdown-item" href="medicine-healthcare.html">Medicine & Healthcare</a></li>
+                                    <li><a class="dropdown-item" href="humanities.html">Humanities & Social Science</a></li>
+                                    <li><a class="dropdown-item" href="subjects.html">View All Subjects</a>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -45,7 +47,8 @@
                             Service
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#authors">Authors & Editors</a></li>
+                            <li><a class="dropdown-item" href="services.html">All Services</a></li>
+                            <li><a class="dropdown-item" href="authors-editors.html">Authors & Editors</a></li>
                             <li><a class="dropdown-item" href="#magazine">Magazine</a></li>
                             <li><a class="dropdown-item" href="#open-access">Open Access</a></li>
                             <li><a class="dropdown-item" href="#journalist">Journalist</a></li>
@@ -59,15 +62,15 @@
                             Publication
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#publish-book">Publish your Book</a></li>
-                            <li><a class="dropdown-item" href="#publish-article">Publish your Article</a></li>
+                            <li><a class="dropdown-item" href="publish-book.html">Publish your Book</a></li>
+                            <li><a class="dropdown-item" href="publish-article.html">Publish your Article</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#librarians">Librarians</a>
+                        <a class="nav-link" href="librarians.html">Librarians</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Help & Contact</a>
+                        <a class="nav-link" href="contact.html">Help & Contact</a>
                     </li>
                 </ul>
             </div>
@@ -777,7 +780,7 @@
             </div>
 
              <!-- M - Medicine, nursing, and dentistry -->
-             <div class="row">
+             <div class="row" id="medical">
                 <a href="" class="h5 fw-bold my-4">Medicine, nursing, and dentistry</a>
                  <div class="col-md-3">
                     <p class="custom-link">Addiction</p>
