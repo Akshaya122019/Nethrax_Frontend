@@ -21,7 +21,7 @@
  .navbar {
      backdrop-filter: blur(10px);
      padding: 1.2rem 0;
-     background-color: white;
+     background-color: #99bae0;
      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
      transition: all 0.3s ease;
  }
@@ -153,7 +153,13 @@
      padding: 100px 0;
      position: relative;
      overflow: hidden;
+     background-position: left center;
  }
+ @media (max-width: 768px) {
+  .hero-section {
+    background-position: right center; /* Shift focus to the right side */
+  }
+}
 
  .hero-section::before {
      content: '';
@@ -172,8 +178,8 @@
  }
 
  .hero-section h1 {
-     font-size: 3rem;
      font-weight: 700;
+     line-height: 6rem;
      margin-bottom: 1.5rem;
  }
 
@@ -215,7 +221,7 @@
 
  /* Home Sec */
  .custom-link {
-     color: #0707ab;
+     color: #99bae0;
      font-size: 0.9rem;
      font-weight: 500;
      text-decoration: none;
@@ -227,11 +233,11 @@
 
  .custom-link:hover {
      text-decoration: underline;
-     color: #0707ab;
+     color: #99bae0;
  }
 
  .arrow {
-     border: solid #0707ab;
+     border: solid #99bae0;
      border-width: 0 2px 2px 0;
      display: inline-block;
      padding: 3px;
@@ -468,7 +474,7 @@
 
  /* Footer */
  footer {
-     background-color: var(--nethrax-navy);
+     background-color: black;
      color: white;
      padding: 60px 0 20px;
  }
