@@ -1,3 +1,4 @@
+ @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  * {
      margin: 0;
      padding: 0;
@@ -11,7 +12,8 @@
  }
 
  body {
-     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Poppins", sans-serif;
+     /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
      overflow-x: hidden;
  }
 
@@ -213,7 +215,7 @@
 
  /* Home Sec */
  .custom-link {
-     color: var(--nethrax-navy);
+     color: #0707ab;
      font-size: 0.9rem;
      font-weight: 500;
      text-decoration: none;
@@ -225,11 +227,11 @@
 
  .custom-link:hover {
      text-decoration: underline;
-     color: var(--nethrax-blue);
+     color: #0707ab;
  }
 
  .arrow {
-     border: solid var(--nethrax-navy);
+     border: solid #0707ab;
      border-width: 0 2px 2px 0;
      display: inline-block;
      padding: 3px;
@@ -255,7 +257,6 @@
      border-radius: 50px;
      cursor: pointer;
      transition: all 0.3s ease;
-     font-weight: 600;
      font-size: 15px;
  }
 
@@ -372,10 +373,6 @@
      border: 1px solid #e0e0e0;
  }
 
- .subcategory-card:hover {
-     transform: translateY(-5px);
-     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
- }
 
  .subcategory-card h4 {
      font-size: 22px;
@@ -389,19 +386,6 @@
      line-height: 1.6;
      margin-bottom: 20px;
      font-size: 15px;
- }
-
- .subcategory-card a {
-     color: var(--nethrax-navy);
-     text-decoration: none;
-     font-weight: 600;
-     font-size: 14px;
-     transition: all 0.3s ease;
- }
-
- .subcategory-card a:hover {
-     color: #00c280;
-     text-decoration: underline;
  }
 
  @media (max-width: 991px) {

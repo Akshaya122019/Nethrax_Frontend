@@ -3,106 +3,182 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Publish Article Banner</title>
+  <title>Bootstrap Full Width Navbar Dropdown</title>
   <!-- Bootstrap CSS -->
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    .custom-banner {
-      position: relative;
-      background: url(images/bg.png) center center / cover no-repeat;
-      min-height: 350px;
-      display: flex;
-      align-items: center;
-      color: white;
+    /* Dropdown show on hover */
+    .dropdown:hover>.dropdown-menu {
+      display: block;
     }
 
-    .custom-banner::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(
-        180deg,
-        rgba(145, 147, 148, 0.7) 0%,
-        rgba(0, 70, 102, 0.85) 100%
-      );
-      z-index: 0;
+    /* Full width dropdown */
+    .dropdown-menu {
+      width: 100vw; /* full viewport width */
+      left: 0 !important; /* align left edge */
+      right: 0 !important; /* align right edge */
+      top: 100%;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      padding: 1rem 2rem;
+      background-color: white;
     }
 
-    .custom-banner-content {
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      padding: 2rem 2rem 2.5rem 2rem;
-    }
-
-    .custom-breadcrumb {
-      background: transparent;
+    /* Container inside dropdown spanning max width */
+    .dropdown-menu > .container {
+      max-width: 100%;
       padding: 0;
-      margin-bottom: 0.75rem;
-      --bs-breadcrumb-divider: " / ";
-      font-size: 0.95rem;
-      font-weight: 500;
     }
 
-    .custom-breadcrumb-item a {
-      color: #00bf78;
-      text-decoration: underline;
+    /* Flex layout for submenu columns */
+    .submenu-columns {
+      display: flex;
+      justify-content: flex-start;
+      gap: 3rem;
+      flex-wrap: nowrap;
     }
 
-    .custom-breadcrumb-item a:hover {
-      color: #00994d;
+    /* Left submenu column */
+    .submenu-left {
+      min-width: 200px;
+    }
+
+    /* Highlighted menu item */
+    .highlighted-item {
+      background-color: #66d9a6;
+      color: black !important;
+      padding: 12px 15px;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      display: block;
       text-decoration: none;
     }
 
-    .custom-breadcrumb-item.active {
-      color: white;
+    /* Normal menu items */
+    .submenu-left a {
+      display: block;
+      padding: 0.5rem 0;
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    .submenu-left a:hover {
+      color: #28a745;
     }
 
-    .custom-banner-title {
-      font-weight: 300;
-      font-size: 3.25rem;
-      margin: 0;
-      line-height: 1.2;
+    /* Right submenu columns */
+    .submenu-right {
+      flex: 1;
+      display: flex;
+      gap: 3rem;
     }
 
-    @media (max-width: 767.98px) {
-      .custom-banner {
-        min-height: 220px;
-      }
-      .custom-banner-content {
-        padding: 1.5rem 1.5rem 1.75rem 1.5rem;
-      }
-      .custom-breadcrumb {
-        font-size: 0.85rem;
-      }
-      .custom-banner-title {
-        font-size: 1.9rem;
-      }
+    .submenu-section {
+      min-width: 200px;
     }
 
-    @media (max-width: 575.98px) {
-      .custom-banner-title {
-        font-size: 1.6rem;
-      }
+    .submenu-section strong {
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+
+    .submenu-section p {
+      font-size: 0.95rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .submenu-section p::after {
+      content: "→";
+      margin-left: 5px;
+      font-weight: bold;
+    }
+
+    /* Remove default navbar item underline style */
+    .nav-link:hover, .nav-link.dropdown-toggle:hover {
+      text-decoration: none;
+    }
+
+    /* Optional: Add border between sections horizontally */
+    .submenu-section:not(:last-child) {
+      border-right: 1px solid #ddd;
+      padding-right: 1.5rem;
+      margin-right: 1.5rem;
     }
   </style>
 </head>
 <body>
-  <section class="custom-banner">
-    <div class="container custom-banner-content">
-      <nav aria-label="breadcrumb">
-        <ol class="breadcrumb custom-breadcrumb">
-          <li class="breadcrumb-item custom-breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item custom-breadcrumb-item"><a href="#">Publish</a></li>
-          <li class="breadcrumb-item custom-breadcrumb-item active" aria-current="page">Article</li>
-        </ol>
-      </nav>
-      <h1 class="custom-banner-title">Publish my article</h1>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid px-4">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <div style="width: 30px; height: 30px; background-color: #28a745; 
+                    border-radius: 50%; margin-right: 8px; color: white; 
+                    text-align: center; line-height: 30px; font-weight: bold;">
+          W
+        </div>
+        WILEY
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item dropdown position-static">
+            <a class="nav-link dropdown-toggle" href="#" id="publishDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Publish My Work
+            </a>
+            <div class="dropdown-menu" aria-labelledby="publishDropdown">
+              <div class="container d-flex">
+                <div class="submenu-columns w-100">
+                  <!-- Left Column -->
+                  <div class="submenu-left">
+                    <a href="#" class="highlighted-item">Publish My Article</a>
+                    <a href="#">Publish My Book</a>
+                  </div>
+                  <!-- Right Columns -->
+                  <div class="submenu-right">
+                    <div class="submenu-section">
+                      <strong>Open Access</strong>
+                      <p>Navigate open access publishing with confidence. Find journals, prepare manuscripts, etc.</p>
+
+                      <strong>Journal Finder</strong>
+                      <p>Match your manuscript with ideal journals using our AI-powered tool.</p>
+
+                      <strong>Author Resources</strong>
+                      <p>Complete publishing support from journal selection to manuscript preparation, open access, etc.</p>
+                    </div>
+                    <div class="submenu-section">
+                      <strong>Editor Resources</strong>
+                      <p>Access expert resources, connect with editor community, and streamline workflows.</p>
+
+                      <strong>Reviewer Resources</strong>
+                      <p>Enhance your peer review skills with step-by-step guidance, recognition tools, and comprehensive reviewer resources.</p>
+
+                      <strong>Research Integrity Hub</strong>
+                      <p>Upholding research integrity through collaboration, policy development, and case resolution.</p>
+
+                      <strong>Special Issues</strong>
+                      <p>Discover focused collections that advance your field.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Teach & Grow</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solutions & Partnerships</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+        </ul>
+      </div>
     </div>
-  </section>
+  </nav>
 
   <!-- Bootstrap JS Bundle -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
