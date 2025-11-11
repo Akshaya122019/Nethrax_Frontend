@@ -155,11 +155,11 @@
      overflow: hidden;
      background-position: left center;
  }
- @media (max-width: 768px) {
+ /* @media (max-width: 768px) {
   .hero-section {
-    background-position: right center; /* Shift focus to the right side */
+    background-position: right center;
   }
-}
+} */
 
  .hero-section::before {
      content: '';
