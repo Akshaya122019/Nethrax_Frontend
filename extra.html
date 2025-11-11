@@ -1,47 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="container py-4">
-        <div class="row">
-            <div class="col-md-3 mb-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="mb-3">Explore Our Research</h5>
-                        <p><span style="color: #1a1a5e;font-weight: bold;">Discover</span> thousands of peer-reviewed
-                            journals, books, and reference works.</p>
-                        <p><span style="color: #1a1a5e;font-weight: bold;">Access</span> cutting-edge scientific
-                            insights and publications from leading experts.</p>
-                        <p><span style="color: #1a1a5e;font-weight: bold;">Engage</span> with a global network of
-                            researchers and innovators shaping the future.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100">
-                    <img src="images/book.png" class="card-img-top img-fluid" style="height: 200px;object-fit: cover;">
-                    <div class="card-body">
-                        <a href="" class="h5 mb-3">Share Your Expertise</a>
-                        <p class="text-muted">Bring your ideas to life — discover how easy it is to publish with us..
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100">
-                    <img src="images/edit.png" class="card-img-top img-fluid" style="height: 200px;object-fit: cover;">
-                    <div class="card-body">
-                        <a href="" class="h5 mb-3">Submit Your Paper</a>
-                        <p class="text-muted">Submit your article and join the community of innovators shaping the
-                            future.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="card h-100">
-                    <img src="images/ebook.jpg" class="card-img-top img-fluid" style="height: 200px;object-fit: cover;">
-                    <div class="card-body">
-                        <a href="" class="h5 mb-3">Go Open Access</a>
-                        <p class="text-muted">Make your work freely available and increase its global reach.</p>
-                    </div>
-                </div>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wiley Style Hero with Navbar Overlay</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* Minimal custom CSS */
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #002a34;
+    }
+
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') no-repeat center center / cover;
+      display: flex;
+      align-items: center;
+      padding: 4rem 1rem 3rem 1rem;
+      color: white;
+      overflow: hidden;
+    }
+
+    /* Overlay a slight dark filter on background image */
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 42, 52, 0.7);
+      z-index: 0;
+    }
+
+    /* Navbar styles */
+    nav.navbar-custom {
+      position: absolute;
+      top: 2rem; /* margin from top */
+      left: 0;
+      right: 0;
+      padding: 0 2rem;
+      z-index: 10;
+      background-color: rgba(0, 42, 52, 0.95); /* semi-transparent */
+      border-radius: 0.375rem;
+      box-shadow: 0 4px 12px rgb(0 0 0 / 0.3);
+    }
+
+    .navbar-brand {
+      font-family: "Georgia", serif;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: #5cd1a8;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 1.25rem;
+    }
+
+    .navbar-brand .logo-circle {
+      border: 2px solid #5cd1a8;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: #5cd1a8;
+      font-weight: 700;
+    }
+
+    .nav-link {
+      color: white !important;
+      font-weight: 500;
+      margin-right: 1rem;
+    }
+
+    .nav-link:hover,
+    .nav-link:focus {
+      color: #5cd1a8 !important;
+      text-decoration: none;
+    }
+
+    /* Icon button styling - similar to Wiley */
+    .icon-btn {
+      background-color: #064946;
+      border: none;
+      border-radius: 0.375rem;
+      padding: 0.35rem 0.6rem;
+      color: #5cd1a8;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      margin-left: 0.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .icon-btn:hover,
+    .icon-btn:focus {
+      background-color: #115d56;
+      color: #a0f1c7;
+      outline: none;
+    }
+
+    /* Main hero content container */
+    .hero-content {
+      position: relative;
+      z-index: 5;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      max-width: 600px;
+      font-weight: 400;
+      font-size: 3.25rem;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtext {
+      font-size: 1rem;
+      margin-top: 1rem;
+      max-width: 600px;
+      font-weight: 400;
+      color: #d1e6db;
+    }
+
+    /* Hero video box styles */
+    .video-box {
+      background-color: #064946;
+      width: 400px;
+      max-width: 100%;
+      height: 225px;
+      border-radius: 0.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgb(89 255 194 / 0.4);
+    }
+
+    .video-logo {
+      font-family: "Georgia", serif;
+      font-weight: 700;
+      font-size: 2.3rem;
+      color: white;
+      position: relative;
+      z-index: 5;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .play-circle {
+      position: absolute;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 3;
+      transition: background-color 0.3s ease;
+    }
+
+    .video-box:hover .play-circle {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .play-icon {
+      width: 0;
+      height: 0;
+      border-top: 15px solid transparent;
+      border-bottom: 15px solid transparent;
+      border-left: 22px solid white;
+      margin-left: 4px;
+      z-index: 10;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+      .hero-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 1rem;
+      }
+
+      .hero-text {
+        font-size: 2.5rem;
+        max-width: 100%;
+      }
+
+      .hero-subtext {
+        max-width: 100%;
+      }
+
+      .video-box {
+        width: 100%;
+        max-width: 320px;
+        height: 180px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      nav.navbar-custom {
+        padding: 0.5rem 1rem;
+      }
+
+      .hero-text {
+        font-size: 2rem;
+      }
+
+      .video-box {
+        width: 100%;
+        height: 160px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero-section">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <a class="navbar-brand" href="#">
+        <div class="logo-circle">W</div>
+        WILEY
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Publish My Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Research</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Teach & Grow</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Solutions & Partnerships</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Insights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+        </ul>
+
+        <div class="d-flex align-items-center">
+          <button class="icon-btn" aria-label="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11 6a5 5 0 1 0-1.001 3.994l3.85 3.85a1 1 0 0 0 1.415-1.415l-3.85-3.85A4.967 4.967 0 0 0 11 6z" />
+            </svg>
+          </button>
+          <button class="icon-btn" aria-label="User Account">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a5 5 0 0 0-5 5v1h10v-1a5 5 0 0 0-5-5z" />
+            </svg>
+          </button>
+          <button class="icon-btn" aria-label="Shopping Cart">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 1.5A.5.5 0 0 1 .5 1h1a.5.5 0 0 1 .485.379L2.89 5H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 14H4a.5.5 0 0 1-.491-.408L1.01 2H.5a.5.5 0 0 1-.5-.5zM4.415 12h7.35a.5.5 0 0 0 .491-.408L13.89 6H3.11l1.305 6z" />
+            </svg>
+          </button>
         </div>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div>
+        <h1 class="hero-text">
+          Where ideas <br />ignite and <br />impact endures
+        </h1>
+        <p class="hero-subtext">
+          Wiley brings together research, learning, and technology to spark breakthroughs and power progress across
+          industries and society.
+        </p>
+      </div>
+
+      <div class="video-box" role="button" aria-label="Play Wiley Video">
+        <div class="play-circle"></div>
+        <div class="video-logo">
+          WI<span style="text-decoration: line-through;">L</span>EY
+          <div class="play-icon"></div>
+        </div>
+      </div>
     </div>
+  </section>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
