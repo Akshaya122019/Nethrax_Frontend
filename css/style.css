@@ -37,7 +37,7 @@ body {
     transition: all 0.3s ease;
 }
 .navbar-toggler{
-    background-color: white;
+    background-color: #9bbae0;
 }
 
 .navbar.scrolled {
