@@ -36,6 +36,9 @@ body {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
+.navbar-toggler{
+    background-color: white;
+}
 
 .navbar.scrolled {
     padding: 0.8rem 0;
@@ -191,7 +194,6 @@ body {
 
 .hero-section h1 {
     font-weight: 700;
-    line-height: 6rem;
     margin-bottom: 1.5rem;
 }
 
